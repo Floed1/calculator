@@ -75,8 +75,15 @@ document.addEventListener("DOMContentLoaded", () => {
               currentInput = String(parseFloat(currentInput) * -1);
               break;
             case "%":
-              currentInput = String(parseFloat(currentInput) / 100);
-              break;
+              if (operator && previousInput !== null) {
+                const base = parseFloat(previousInput);
+                const percent = parseFloat(currentInput);
+                const result = base * percent / 100;
+                currentInput = result.toString();
+              } else {
+                currentInput = (parseFloat(currentInput) / 100).toString();
+              }
+                break;
             case "reciprocal":
               currentInput = parseFloat(currentInput) !== 0 ? String(1 / parseFloat(currentInput)) : "Fehler";
               break;
