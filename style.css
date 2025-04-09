@@ -61,6 +61,8 @@ body {
   .display .result {
     font-size: 40px;
     color: #000;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   
   .memory-bar {
@@ -87,7 +89,7 @@ body {
   .buttons button {
     padding: 15px;
     font-size: 18px;
-    background: #e7e7e7;
+    background: #f3f3f3;
     border: none;
     border-radius: 6px;
     cursor: pointer;
