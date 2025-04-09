@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Win10 Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="calculator">
+    <div class="titlebar">
+      <span>Calculator</span>
+      <div class="window-controls">
+        <button>–</button>
+        <button>□</button>
+        <button>×</button>
+      </div>
+    </div>
+
+    <div class="header">
+      <span class="menu">☰</span>
+      <span class="mode">Standard</span>
+      <span class="history">History</span>
+    </div>
+
+    <div class="display">
+      <div class="expression"></div>
+      <div class="result">0</div>
+    </div>
+
+    <div class="memory-bar">
+      <span>MC</span>
+      <span>MR</span>
+      <span>M+</span>
+      <span>M−</span>
+      <span>MS</span>
+      <span>M˅</span>
+    </div>
+
+    <div class="buttons">
+      <button data-action="%">%</button>
+      <button data-action="clear-entry">CE</button>
+      <button data-action="clear">C</button>
+      <button data-action="backspace">⌫</button>
+      <button data-action="reciprocal">⅟x</button>
+      <button data-action="square">x²</button>
+      <button data-action="sqrt">²√x</button>
+      <button data-action="/">÷</button>
+
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button data-action="*">×</button>
+
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button data-action="-">−</button>
+
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button data-action="+">+</button>
+
+      <button data-action="plus-minus">+/−</button>
+      <button>0</button>
+      <button data-action=".">,</button>
+      <button class="equal" data-action="=">=</button>
+    </div>
+  </div>
+</body>
+</html>
